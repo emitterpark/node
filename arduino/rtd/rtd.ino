@@ -49,7 +49,7 @@ const uint8_t batEnDly = 1, batSampDly = 1, batSampNum = 3;
 
 CayenneLPP lpp(51);
 ClosedCube_SHT31D analog;
-//WebUSB WebUSBSerial(1 /* https:// */, "emitterpark.github.io/th");
+//WebUSB WebUSBSerial(1 /* https:// */, "emitterpark.github.io/rtd");
 WebUSB WebUSBSerial(1 /* https:// */, "127.0.0.1:5500");
 #define usbSerial WebUSBSerial
 #define loraSerial Serial1
@@ -291,7 +291,7 @@ void setUsbSerial() {
 }
 void printAll() {
   printChFetch();
-  printMsg(F("xdeviceeLoraWAN Wireless TH"));   
+  printMsg(F("xdeviceeLoraWAN Wireless RTD"));   
   printMsg(F("xversionFirmware 1.0.1"));
   printChConf();
   printLoraConf();
